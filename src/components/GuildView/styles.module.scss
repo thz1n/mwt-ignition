@@ -1,0 +1,171 @@
+.guildViewWrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  .guildBanner {
+    width: 100%;
+    height: 100%;
+    min-width: 672px;
+    max-height: 220px;
+    position: relative;
+    border-radius: 2rem;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    background-color: #17171a;
+
+    .closeButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: #202024;
+      border: 1px solid #303036;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 10rem;
+      top: 20px;
+      right: -25px;
+      cursor: pointer;
+    }
+
+    .guildNameBox {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      left: 30px;
+      bottom: 50px;
+
+      h3{
+        background: #ff008a;
+        background: -webkit-linear-gradient(to right, #ff008a 0%, #ffcd1e 100%);
+        background: -moz-linear-gradient(to right, #ff008a 0%, #ffcd1e 100%);
+        background: linear-gradient(to right, #ff008a 0%, #ffcd1e 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
+
+.frameGuildLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  margin-top: -64px;
+  background: linear-gradient(to right, #ff008a 0%, #ffcd1e 100%);
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+
+  > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+
+    > div {
+      display: grid;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      margin-left: 0;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-column-gap: 0;
+      grid-row-gap: 0;
+      aspect-ratio: 1 / 1 !important;
+      border-radius: 0.3rem;
+      border: 1px solid #1c1c2a;
+      overflow: hidden;
+    
+    }
+  }
+
+}
+
+.characterListWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 991;
+
+  section {
+    
+    > h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    > img {
+      height: 28px;
+      margin: 32px 0;
+    }
+    
+    .characterList {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 150px;
+      
+      .character {
+        display: flex;
+        justify-content: center;
+        width: 160px;
+        aspect-ratio: 1 / 1;
+        flex: 1;
+        background-color: #17171a;
+        border-radius: 0.9rem;
+        cursor: pointer;
+
+
+        .characterContent {
+          font-size: 20px;
+          line-height: 28px;
+        }
+        
+        .characterUser {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+
+          .userImage {
+            padding: 2px;
+            background: linear-gradient(100deg, #ff008a 0%,#ffcd1e 100%);
+            border-radius: 50%;
+            line-height: 0;
+
+            img {
+              width: 60px;
+              height: auto;
+              border-radius: 50%;
+              border: 4px solid #121214;
+            }
+          }
+          span {
+            margin-top: 10px;
+            font-size: 12px;
+          }
+        }
+      }
+
+    }
+  }
+}

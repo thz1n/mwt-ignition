@@ -1,0 +1,16 @@
+.rankPositionWrapper {
+  position: absolute;
+  left: 20px;
+  bottom: -160px;
+
+  .rankPositionTitle{
+    font-size: 0.9rem;
+    line-height: 0.5rem;
+    font-weight: bold;
+  }
+  .position {
+    font-size: 8rem;
+    line-height: 5rem;
+    color: rgba(255, 255, 255, 0.2);
+  }
+}

@@ -1,0 +1,61 @@
+.myAccountWrapper {
+  border-end-start-radius: 1rem;
+  border-end-end-radius: 1rem;
+  padding: 40px 80px 40px;
+  background-color: #17171a;
+  background-image: url("/images/banner-my-account.png");
+  background-repeat: no-repeat;
+
+  .accountAvatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 10rem;
+    overflow: hidden;
+    padding: 5px;
+    background: linear-gradient(100deg, #ff008a 0%,#ffcd1e 100%);
+
+    > img {
+      display: block;
+      border-radius: 10rem;
+      max-width: 100%;
+      border: 5px solid #17171a;
+    }
+  }
+
+  > span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  > button {
+    width: 100%;
+    background-color: #ffcd1e;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0 40px;
+    height: 56px;
+    color: #09090a;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    svg {
+      margin-right: 16px;
+    }
+    &:hover{
+      filter: brightness(0.9);
+    }
+  }
+  
+}

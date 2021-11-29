@@ -1,0 +1,89 @@
+.lifeBarWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 1.3rem;
+  line-height: 1rem;
+  width: 100%;
+  max-width: 220px;
+  background-color: darkred;
+  border: 1px solid red;
+
+  position: absolute;
+  left: 50px;
+  bottom: -0.8rem;
+  
+  clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+
+  &::after {
+    content: "HP";
+    position: absolute;
+    right: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .maxLifeValue {
+    position: absolute;
+    left: 20px;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    z-index: 99;
+  }
+  
+  .lifeBar {
+    height: 100%;
+    background-color: red;
+  }
+
+}
+
+.manaBarWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 1.3rem;
+  line-height: 1rem;
+  width: 100%;
+  max-width: 220px;
+  background-color: darkblue;
+  border: 1px solid blue;
+
+  position: absolute;
+  right: 55px;
+  bottom: -0.8rem;
+
+  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+
+  &::after {
+    content: "MP";
+    position: absolute;
+    left: 45px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .maxManaValue {
+    position: absolute;
+    right: 20px;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    z-index: 99;
+  }
+  
+  .manaBar {
+    height: 100%;
+    background-color: blue;
+  }
+
+}

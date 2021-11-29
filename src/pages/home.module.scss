@@ -1,0 +1,9 @@
+.contentWrapper {
+  max-width: 1200px;
+  height: calc(100vh - 5rem);
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: 1fr 453px;
+  column-gap: 75px;
+  position: relative;
+}
